@@ -66,8 +66,6 @@ nav a:first-child {
   padding: 30px;
 }
 
-#portfolio{ height: 900px; }
-
 #aboutme h2, #contact h2, #portfolio h2 {
   padding-bottom: 20px;
   line-height: 49px;
@@ -158,8 +156,4 @@ footer {
   background: #666;
   border-top: 8px solid #4aaaa5;
   padding: 30px 0;
-}
-
-@media screen and (max-width: 640px){
-  #portfolio{ height: 1400px; }
 }
