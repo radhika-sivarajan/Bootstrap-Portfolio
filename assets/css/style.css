@@ -12,11 +12,13 @@ a:link, a:hover {
   text-decoration: none;
 }
 
+/* Header bar */
 #header{
   background: #fff;
   border-bottom: 2px solid #ccc;  
 }
 
+/* Logo navigation links */
 .navHeader {
   font-family: 'Georgia', Times, Times New Roman, serif;
   background-color: #4aaaa5;  
@@ -67,6 +69,32 @@ a:link, a:hover {
 
 #aboutme img { margin: 0 20px 10px 0; }
 
+/* Profile pic animation */
+.imgan {
+    position: relative;
+    -webkit-animation: myfirst 3s linear 0s; /* Safari 4.0 - 8.0 */
+    animation: propic 3s linear 0s;
+}
+
+@keyframes propic {
+    0%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+
+/* About me paragraph animation */
+.fade {
+    -webkit-animation-name: texts; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: texts;
+    animation-duration: 5s;
+    opacity: 10;
+}
+
+@keyframes texts {
+    from {color: #fff;}
+    to {color: #777;}
+}
+
 #aboutme p, .label {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 18px;
@@ -74,11 +102,13 @@ a:link, a:hover {
   line-height: 34px;
 }
 
+/* Input label in contact form */
 div .label{
   padding: 0;
   font-weight: 100;
 }
 
+/* Portfolio images */
 .work {
   position: relative;
   width: 274px;
@@ -112,6 +142,8 @@ div .label{
   border-bottom: 0;
 }
 
+
+/* Sidebar for social link */
 #sidebar {
   border: 1px solid #ddd;
   text-align: center;
@@ -129,6 +161,8 @@ div .label{
   border-bottom: 2px solid #eee;
 }
 
+
+/* Social links */
 .social {
   width: 62px;
   height: 62px;
@@ -140,6 +174,11 @@ div .label{
   margin-right: 0;
 }
 
+/* Social link transformation */
+.social:hover { transform: scale(1.2); }
+
+
+/* Footer */
 footer {
   clear: both;
   color: #ccc;
