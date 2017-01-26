@@ -72,8 +72,8 @@ a:link, a:hover {
 /* Profile pic animation */
 .imgan {
     position: relative;
-    -webkit-animation: myfirst 3s linear 0s; /* Safari 4.0 - 8.0 */
-    animation: propic 3s linear 0s;
+    -webkit-animation: propic 3s ease-out 0s; /* Safari 4.0 - 8.0 */
+    animation: propic 3s ease-out 0s;
 }
 
 @keyframes propic {
@@ -86,7 +86,7 @@ a:link, a:hover {
     -webkit-animation-name: texts; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: texts;
-    animation-duration: 5s;
+    animation-duration: 4s;
     opacity: 10;
 }
 
@@ -168,6 +168,9 @@ div .label{
   height: 62px;
   margin-top: 8px;
   margin-right: 5px;
+  -moz-transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out; 
+  transition: all .3s ease-out; 
 }
 
 .social:last-child {
@@ -175,7 +178,11 @@ div .label{
 }
 
 /* Social link transformation */
-.social:hover { transform: scale(1.2); }
+.social:hover { 
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); 
+}
 
 
 /* Footer */
